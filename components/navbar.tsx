@@ -1,9 +1,14 @@
 type NavbarProps = { isScrolling: boolean }
 
 const navbar = ({ isScrolling }: NavbarProps) => {
+
+  const toTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" })
+  }
+
   return (
     <nav className={`navbar ${isScrolling ? 'scrollable' : ''}`}>
-        <div className='navbar-logo'>Lucas Bianchi</div>
+        <div className='navbar-logo' onClick={toTop}>Lucas Bianchi</div>
     </nav>
   )
 }

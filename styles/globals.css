@@ -80,3 +80,34 @@ a {
   color: white;
   cursor: pointer;
 }
+
+.about-container {
+  display: flex;
+  background-color: white;
+  color: black;
+  height: 70vh;
+  padding: 100px 0 100px 0;
+}
+
+.about-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 55%;
+  padding: 0 100px 0 100px;
+}
+
+.about-description > h3 {
+  margin-bottom: 1.9rem;
+  font-size: 1.75rem;
+}
+
+.about-description > p {
+  line-height: 1.5;
+}
+
+.about-image {
+  display: block;
+  align-self: center;
+  object-fit: contain;
+}

@@ -3,6 +3,8 @@ import { useState, useEffect } from 'react'
 import Head from 'next/head'
 import Cover from '../components/cover'
 import Navbar from '../components/navbar'
+import About from '../components/about'
+import Slider from 'components/slider'
 
 const Home: NextPage = () => {
 
@@ -29,6 +31,8 @@ const Home: NextPage = () => {
 
       <Navbar isScrolling={scroll} />
       <Cover />
+      <About />
+      <Slider />
 
     </div>
   )
