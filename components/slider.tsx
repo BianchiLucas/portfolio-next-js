@@ -17,24 +17,28 @@ const Slider = () => {
       <div className="slide-container">
 
         <Swiper
-          slidesPerView={3}
-          spaceBetween={30}
+          slidesPerView={"auto"}
+          spaceBetween={40}
           pagination={{
             clickable: true,
           }}
           autoplay={{
-            delay: 2500,
+            delay: 3000,
             disableOnInteraction: false,
           }}
           navigation={true}
           loop={true}
+          centeredSlides={true}
           modules={[Autoplay, Pagination, Navigation]}
           className="mySwiper"
         >
           {
             data.map((slide, index) => (
               <SwiperSlide key={index} className='swiper-slide-container'>
-                <img src={slide.src} alt={slide.alt} className='slide-image' />
+                <img src={slide.src} alt={slide.alt}  />
+                <div className="slide-desc">
+                  <span>{slide.desc}</span>
+                </div>
               </SwiperSlide>
             ))
           }
