@@ -8,7 +8,7 @@ const navbar = ({ isScrolling }: NavbarProps) => {
 
   return (
     <nav className={`navbar ${isScrolling ? 'scrollable' : ''}`}>
-        <div className='navbar-logo' onClick={toTop}>Lucas Bianchi</div>
+        <div className={`navbar-logo ${isScrolling ? 'visible' : ''}`} onClick={toTop}>Lucas Bianchi</div>
     </nav>
   )
 }

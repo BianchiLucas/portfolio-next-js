@@ -5,6 +5,8 @@ import Cover from '../components/cover'
 import Navbar from '../components/navbar'
 import About from '../components/about'
 import Slider from 'components/slider'
+import Info from 'components/info'
+import Footer from 'components/footer'
 
 const Home: NextPage = () => {
 
@@ -33,6 +35,8 @@ const Home: NextPage = () => {
       <Cover />
       <About />
       <Slider />
+      <Info />
+      <Footer />
 
     </div>
   )
