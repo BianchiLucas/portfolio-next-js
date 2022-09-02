@@ -76,6 +76,7 @@ a {
 }
 
 .navbar-logo {
+  display: none;
   height: 3.5rem;
   line-height: 3.5rem;
   color: transparent;
@@ -83,23 +84,39 @@ a {
 }
 
 .visible {
+  display: flex;
   color: white;
-  transition: all 1s ease;
+  animation: type 2s;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@keyframes type {
+  0% {
+    width: 0ch
+  }
+
+  100% {
+    width: 13ch
+  }
 }
 
 .about-container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: white;
   color: black;
-  height: 70vh;
+  height: 75vh;
   padding: 100px 0 100px 0;
+  object-fit: cover;
 }
 
 .about-description {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 55%;
+  width: 60%;
   padding: 0 100px 0 100px;
 }
 
@@ -114,8 +131,7 @@ a {
 
 .about-image {
   display: block;
-  align-self: center;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .carousel-container {
@@ -160,7 +176,7 @@ a {
   height: 100%;
   object-fit: cover;
   border-radius: 40px;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .swiper-slide-container:hover>img {
@@ -186,12 +202,14 @@ a {
   padding: 20px 0 20px 10px;
 }
 
-.swiper-button-prev, .swiper-button-next {
+.swiper-button-prev,
+.swiper-button-next {
   scale: 0.7;
   transition: all 0.2s ease-in-out;
 }
 
-.swiper-button-prev:hover, .swiper-button-next:hover {
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
   scale: 1;
 }
 
@@ -229,14 +247,8 @@ a {
   margin: 0 auto;
 }
 
-.footer-info > h1 {
+.footer-info>h1 {
   padding-bottom: 15px;
-}
-
-.footer-contact {
-  font-size: 1.3rem;
-  padding-left: 50px;
-  color: white;
 }
 
 .footer-sns {
@@ -251,13 +263,21 @@ a {
   align-items: center;
 }
 
+.footer-contact {
+  font-size: 1.6rem;
+  padding-left: 50px;
+  padding-bottom: 10px;
+  color: white;
+}
+
 .sns-links {
   display: grid;
   width: 100%;
   grid-template-columns: 1fr 1fr;
 }
 
-.BsLinkedin, .BsGithub {
+.BsLinkedin,
+.BsGithub {
   color: white;
   font-size: 3rem;
   margin: 0 auto;
@@ -265,7 +285,81 @@ a {
   border-bottom: 4px solid transparent;
 }
 
-.BsLinkedin:hover, .BsGithub:hover {
+.BsLinkedin:hover,
+.BsGithub:hover {
   border-color: white;
   transition: all 0.3s ease-out;
+}
+
+@media screen and (max-width:960px) {
+  .cover-container>h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .cover-container>p {
+    font-size: 1rem;
+    text-align: center;
+    width: 85%;
+  }
+
+  .about-container {
+    flex-direction:  column;
+    padding: 0;
+    height: auto;
+  }
+
+  .about-description {
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px 20px 50px 20px;
+  }
+
+  .about-description > h3 {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .about-image {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .carousel-container {
+    grid-template-columns: 100%;
+  }
+
+  .swiper-slide-container {
+    width: 350px !important;
+    height: 470px !important;
+  }
+
+  .swiper-button-prev, .swiper-button-next {
+    display: none !important;
+  }
+
+  .info {
+    font-size: 0.8rem;
+  }
+  
+  .footer-info {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0;
+  }
+
+  .footer-sns {
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-contact {
+    font-size: 1.2rem;
+    padding-left: 0;
+  }
+
+  .BsGithub, .BsLinkedin {
+    font-size: 2.5rem;
+  }
 }

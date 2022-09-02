@@ -13,7 +13,7 @@ const Footer = () => {
             <div className="footer-sns">
                 
                 <div className="footer-contact">
-                    <h3>Contacto</h3>
+                    <p>Contacto</p>
                 </div>
 
                 <div className="sns-links">
