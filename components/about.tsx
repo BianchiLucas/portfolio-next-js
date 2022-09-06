@@ -1,7 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Photo from 'public/Photo.png'
-
+import Photo from 'public/Photo.jpg'
 const About = () => {
     return (
         <div className='about-container'>
@@ -10,7 +9,7 @@ const About = () => {
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt perferendis sapiente esse laudantium dolorem, tempora soluta beatae pariatur? Natus ab unde eaque, nihil porro quod voluptatem quam sit. Mollitia eveniet beatae aliquam illo vero vel consectetur, quo provident porro. Quae!</p>
             </div>
             <div className='about-image'>
-                <Image src={Photo} alt='Photo' width={500} height={666} />
+                <Image src={Photo} alt='Photo'  />
             </div>
         </div>
     )

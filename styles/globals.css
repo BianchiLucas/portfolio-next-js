@@ -130,8 +130,16 @@ a {
 }
 
 .about-image {
+  max-width: 600px;
+  max-height: 600px;
+  padding: 20px;
   display: block;
   object-fit: cover;
+}
+
+.about-image span {
+  border-radius: 40px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .carousel-container {
@@ -195,11 +203,16 @@ a {
   opacity: 0.8;
 }
 
-.slide-desc>span {
+.slide-desc>a {
   color: white;
   display: block;
   font-size: 1rem;
   padding: 20px 0 20px 10px;
+}
+
+.slide-desc:hover>a {
+  transition: all 0.5s ease-in-out;
+  color: lightblue;
 }
 
 .swiper-button-prev,
@@ -212,6 +225,14 @@ a {
 .swiper-button-next:hover {
   scale: 1;
 }
+
+.swiper-pagination-bullet {
+  background-color: #ffff !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: #007aff !important;
+}
+
 
 .info-container {
   width: 100;
@@ -228,13 +249,18 @@ a {
   height: 100%;
 }
 
-.info > h1 {
+.info>h1 {
   display: none;
 }
 
-.uno, .dos, .tres, .cuatro, .cinco, .seis {
+.uno,
+.dos,
+.tres,
+.cuatro,
+.cinco,
+.seis {
   display: flex !important;
-} 
+}
 
 .footer {
   width: 100%;
@@ -312,7 +338,7 @@ a {
   }
 
   .about-container {
-    flex-direction:  column;
+    flex-direction: column;
     padding: 0;
     height: auto;
   }
@@ -323,7 +349,7 @@ a {
     padding: 40px 20px 50px 20px;
   }
 
-  .about-description > h3 {
+  .about-description>h3 {
     font-size: 1.25rem;
     text-align: center;
   }
@@ -343,14 +369,15 @@ a {
     height: 470px !important;
   }
 
-  .swiper-button-prev, .swiper-button-next {
+  .swiper-button-prev,
+  .swiper-button-next {
     display: none !important;
   }
 
   .info {
     font-size: 0.8rem;
   }
-  
+
   .footer-info {
     font-size: 1.2rem;
     text-align: center;
@@ -367,7 +394,8 @@ a {
     padding-left: 0;
   }
 
-  .BsGithub, .BsLinkedin {
+  .BsGithub,
+  .BsLinkedin {
     font-size: 2.5rem;
   }
 }
