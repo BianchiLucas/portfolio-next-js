@@ -3,17 +3,17 @@ import React from 'react'
 
 export const data: {src: string, alt: string, desc: string}[] = [
     {
-        src: "/GreatCrusade.png",
+        src: "/Crusade.png",
         alt: "Project 1",
         desc: "Project 1",
     },
     {
-        src: '/NextjsBlog.png',
+        src: '/Coffee.png',
         alt: "Project 2",
         desc: "Project 2",
     },
     {
-        src: '/JobsAPI.png',
+        src: '/APIJobs.png',
         alt: "Project 3",
         desc: "Project 3",
     },

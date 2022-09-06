@@ -10,7 +10,7 @@ import Footer from 'components/footer'
 
 const Home: NextPage = () => {
 
-  const [scroll, setScroll] = useState(false)
+  const [scroll, setScroll] = useState<boolean>(false)
   const scrollHandler = () => {
     if (window.scrollY >= 100) {
       setScroll(true)
