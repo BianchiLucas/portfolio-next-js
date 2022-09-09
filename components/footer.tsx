@@ -1,5 +1,5 @@
 import React from 'react'
-import { BsLinkedin, BsGithub } from 'react-icons/bs'
+import { BsLinkedin, BsGithub, BsFillFileEarmarkPersonFill } from 'react-icons/bs'
 
 const Footer = () => {
     return (
@@ -22,6 +22,9 @@ const Footer = () => {
                     </a>
                     <a href="https://github.com/BianchiLucas" target="_blank" rel='noreferrer'>
                         <BsGithub className='BsGithub' />
+                    </a>
+                    <a href="https://drive.google.com/file/d/1KkYYZ27pLZGoB9gP6N_iJyWNx6RlpXyU/view?usp=sharing" target="_blank" rel='noreferrer'>
+                        <BsFillFileEarmarkPersonFill className='BsFillFileEarmarkPersonFill' />
                     </a>
                 </div>
             </div>
