@@ -23,8 +23,9 @@ const Slider = () => {
             clickable: true,
           }}
           autoplay={{
-            delay: 3000,
+            delay: 4000,
             disableOnInteraction: false,
+            pauseOnMouseEnter: true
           }}
           navigation={true}
           loop={true}
@@ -36,9 +37,9 @@ const Slider = () => {
             data.map((slide, index) => (
               <SwiperSlide key={index} className='swiper-slide-container'>
                 <img src={slide.src} alt={slide.alt} />
-                <div className="slide-desc">
+                <div className="slide-desc" title={slide.desc}>
                   <a href={slide.url}>
-                    <span>{slide.desc}</span>
+                    <span>{slide.alt}</span>
                   </a>
                 </div>
               </SwiperSlide>
