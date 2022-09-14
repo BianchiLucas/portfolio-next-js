@@ -17,13 +17,13 @@ const Footer = () => {
                 </div>
 
                 <div className="sns-links">
-                    <a href="https://www.linkedin.com/in/bianchilucasgabriel/" target="_blank" rel='noreferrer'>
+                    <a href="https://www.linkedin.com/in/bianchilucasgabriel/" target="_blank" rel='noreferrer' title='LinkedIn'>
                         <BsLinkedin className='BsLinkedin' />
                     </a>
-                    <a href="https://github.com/BianchiLucas" target="_blank" rel='noreferrer'>
+                    <a href="https://github.com/BianchiLucas" target="_blank" rel='noreferrer' title='GitHub'>
                         <BsGithub className='BsGithub' />
                     </a>
-                    <a href="https://drive.google.com/file/d/1KkYYZ27pLZGoB9gP6N_iJyWNx6RlpXyU/view?usp=sharing" target="_blank" rel='noreferrer'>
+                    <a href="https://drive.google.com/file/d/1KkYYZ27pLZGoB9gP6N_iJyWNx6RlpXyU/view?usp=sharing" target="_blank" rel='noreferrer' title='Resume'>
                         <BsFillFileEarmarkPersonFill className='BsFillFileEarmarkPersonFill' />
                     </a>
                 </div>
