@@ -37,6 +37,15 @@ const Info = () => {
             if (position > 2400 && position < 2550) {
                 setWind(1)
             }
+            if (position > 2550 && position < 2700) {
+                setWind(2)
+            }
+            if (position > 2700 && position < 2850) {
+                setWind(3)
+            }
+            if (position > 2850 && position < 3000) {
+                setWind(4)
+            }
         }
     }
 

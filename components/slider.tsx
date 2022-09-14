@@ -1,6 +1,6 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Pagination, Navigation, Autoplay } from 'swiper'
+import { Pagination, Autoplay } from 'swiper'
 import { data } from './data'
 
 
@@ -32,7 +32,7 @@ const Slider = () => {
           navigation={true}
           loop={true}
           centeredSlides={true}
-          modules={[Autoplay, Pagination, Navigation]}
+          modules={[Autoplay, Pagination]}
           className="mySwiper"
         >
           {

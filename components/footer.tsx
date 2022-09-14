@@ -7,7 +7,7 @@ const Footer = () => {
 
             <div className="footer-info">
                 <h1>Lucas Bianchi</h1>
-                <p>Avellaneda, Santa Fe</p>
+                <p>Avellaneda, Santa Fe, Argentina</p>
             </div>
 
             <div className="footer-sns">
