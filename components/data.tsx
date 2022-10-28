@@ -16,9 +16,15 @@ export const data: { src: string, alt: string, desc: string, url: string }[] = [
     },
     {
         src: '/APIJobs.png',
-        alt: "REST API",
+        alt: "REST API en Express",
         desc: "API en Node.js, Express, JWT y MongoDB",
         url: "https://jobs-api-nodejs-express-deploy.herokuapp.com"
+    },
+    {
+        src: '/Nestjs-project.png',
+        alt: "REST API en Nestjs.",
+        desc: "API en Nestjs, Prisma, passport-jwt, argon2 y testeado e2e con PactumJS",
+        url: "https://nestjs-api-tutorial.herokuapp.com/"
     },
     {
         src: '/Wear.png',
@@ -27,3 +33,4 @@ export const data: { src: string, alt: string, desc: string, url: string }[] = [
         url: "https://whattowear.netlify.app/"
     },
 ]
+

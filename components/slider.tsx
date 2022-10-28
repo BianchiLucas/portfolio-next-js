@@ -1,6 +1,6 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Pagination, Autoplay } from 'swiper'
+import { Pagination, Autoplay, Navigation } from 'swiper'
 import { data } from './data'
 
 
@@ -12,7 +12,7 @@ const Slider = () => {
       <div className="carousel-title" >
         <h3>Proyectos</h3>
         <p>Una serie de proyectos Frontend en React y Next.js, tanto en JS como en TS, utilizando CSS y librerías como Tailwindcss y Styled components.
-          Además una API en Node.js y Express, con JSON web token y database en MongoDB con modelos mongoose. 
+          Además una API en Node.js y Express, con JSON web token y database en MongoDB con modelos mongoose.
         </p>
       </div>
 
@@ -32,7 +32,7 @@ const Slider = () => {
           navigation={true}
           loop={true}
           centeredSlides={true}
-          modules={[Autoplay, Pagination]}
+          modules={[Autoplay, Pagination, Navigation]}
           className="mySwiper"
         >
           {
